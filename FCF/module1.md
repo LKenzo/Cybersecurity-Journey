@@ -1,8 +1,8 @@
-Fortinet FCF
+# Fortinet FCF
 
-Module 1
-
-Key Points
+# Module 1
+---
+## Key Points
 - Cybersecurity protects digital information from cyberthreats
 - Category of Cybersecurity: Critical Infra, application, network, cloud, and IoT secyurity
 - Information Security (InfoSec) is the practice of protecting information (Digital & Physical)
@@ -21,7 +21,7 @@ AAA:
 - Authentication = Access privileges
 - Accounting = Record of a user activity
 
-Questions
+## Questions
 - Which two elements of cybersecurity must be addressed when defending computer networks?
   Answer:
   - Computer technology vulnerabilities.
