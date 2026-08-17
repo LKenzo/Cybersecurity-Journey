@@ -1,7 +1,8 @@
-# C0rrupt (Data)
+# C0rrupt
 
 **Category:** Forensic  
-**Difficulty:** Medium (Harder Medium)  
+**Difficulty:** Medium (Harder Medium)
+**File Type:** Data
 **Tools Used:** `file`, `xxd`, `pngcheck`, `hexedit` / `xxd -r`, Python (`zlib`)
 Link: https://learn.cylabacademy.org/library/53?page=6&category=4
 
