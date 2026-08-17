@@ -48,7 +48,7 @@ Tools I frequently use across both CTFs and general forensics:
 ## Connect with Me
 
 - **GitHub**: [LKenzo](https://github.com/LKenzo)
-- **LinkedIn**: *[Add your URL here]*
+- **LinkedIn**: [Maximillian Frenat](https://www.linkedin.com/in/maximillian-frenat-80ab41286/)
 
 ---
 
