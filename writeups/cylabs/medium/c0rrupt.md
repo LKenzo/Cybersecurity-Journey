@@ -1,7 +1,12 @@
+# COrrupt (Data)
+
+**Category:** Forensic  
+**Difficulty:** Medium (Harder Medium)  
+**Tools Used:** `file`, `xxd`, `pngcheck`, `hexedit` / `xxd -r`, Python (`zlib`)
 Link: https://learn.cylabacademy.org/library/53?page=6&category=4
 
-To start off this challenge, I’ll be checking the file type first by using file.
-
+## 1. Initial Reconnaissance
+The challenge provided a single file named `c0rrupt` (no extension). My first instinct was to identify what type of file it was.
 <img width="325" height="58" alt="image" src="https://github.com/user-attachments/assets/7106cb63-0f76-423b-8298-c8501e7d3a72" />
 
 
@@ -22,6 +27,8 @@ After duplicating the file, we’ll proceed with the first step that is fixing t
 Current hex header: 89 65 4E 34 0D 0A B0
 PNG hex header: 89 50 4E 47 0D 0A 1A
 
+## 2. Understanding the Corruption
+To diagnose the exact corruption, I used pngcheck, a tool specifically designed to validate PNG file structure:
 <img width="923" height="21" alt="image" src="https://github.com/user-attachments/assets/9bf57a4b-03e4-4794-a887-acb8b61da95e" />
 
 After the file hex header fix. I also noticed that this PNG file is missing one of the most essential part of PNG specification on its header, that is the IHDR Chunk.
@@ -30,6 +37,7 @@ It looks like the file is corrupted and changed IHDR to C”DR
 
 <img width="586" height="373" alt="image" src="https://github.com/user-attachments/assets/b32583a5-bd1f-431b-8c1f-1926a67106bf" />
 
+## 3. Fixing the CRC
 To fix this issue, we can use hexedit, and change the two bytes.
 
 From: 43 22 44 52
@@ -37,7 +45,7 @@ To : 49 48 44 52
 
 <img width="960" height="267" alt="image" src="https://github.com/user-attachments/assets/9b258bc8-b94f-4332-81df-5ec7df4f5f02" />
 
-
+## 4. Verification
 Next, we’ll have  to verify the validity of the PNG file, by using pngcheck to see if we’ve missed any other issue.
 
 ```bash
@@ -49,7 +57,7 @@ pngcheck -c -v [file.png]
 
 <img width="326" height="46" alt="image" src="https://github.com/user-attachments/assets/ca8d19ed-982c-47c2-99de-8e4a73cb8afd" />
 
-
+## 5. Repeat step 3-4
 After running the tool to the PNG file, we can see that it detects an error in the File. It says there is an error on the CRC and it’s inside of pHYs chunk.
 
 The pngcheck actually gave us the answer on what to change. It excpects the value to be 49 52 24 F0 instead of 38 D8 2C 82.
@@ -150,8 +158,7 @@ So, The PNG file should now be fixed and can be opened.
 
 Challenge Completed
 
-## What I learn:
-
+## 5. Lesson Learned
 1. First step of CLI Patching, always make a backup file. Always safe the original file intact (Learned this from someone write up, since I was stuck on some parts).
 Link: https://medium.com/@sobatistacyber/picoctf-writeup-c0rrupt-cc24de6f61e9
 2. A tool that checks for the validity of png (pngchecker).
