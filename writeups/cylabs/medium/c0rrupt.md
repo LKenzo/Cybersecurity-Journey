@@ -1,10 +1,10 @@
 # C0rrupt
 
-**Category:** Forensic
-**Difficulty:** Medium (Harder Medium)
-**File Type:** Data
-**Tools Used:** `file`, `xxd`, `pngcheck`, `hexedit` / `xxd -r`, Python (`zlib`)
-Link: https://learn.cylabacademy.org/library/53?page=6&category=4
+**Category:** Forensic\
+**Difficulty:** Medium (Harder Medium)\
+**File Type:** Data\
+**Tools Used:** `file`, `xxd`, `pngcheck`, `hexedit` / `xxd -r`, Python (`zlib`)\
+**Link:** https://learn.cylabacademy.org/library/53?page=6&category=4\
 
 ## 1. Initial Reconnaissance
 The challenge provided a single file named `c0rrupt` (no extension). My first instinct was to identify what type of file it was.
