@@ -1,4 +1,4 @@
-# COrrupt (Data)
+# C0rrupt (Data)
 
 **Category:** Forensic  
 **Difficulty:** Medium (Harder Medium)  
