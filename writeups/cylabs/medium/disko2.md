@@ -1,4 +1,4 @@
-<img width="1877" height="410" alt="image" src="https://github.com/user-attachments/assets/24139002-1cab-432a-9508-7f4f6259b7ef" /># DISKO 2
+# DISKO 2
 
 **Category:** Forensic\
 **Difficulty:** Medium\
