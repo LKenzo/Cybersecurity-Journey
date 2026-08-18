@@ -18,6 +18,7 @@ The challenge itself is hinting us to only extract partition 1 that is the linux
 ## 3. Finding The Flag
 Now the actual next step is mounting the extracted partition so we can explore it ourselves, but for a quick scan I used strings on the extracted partition to search for the flag.
 <img width="420" height="79" alt="image" src="https://github.com/user-attachments/assets/1ce324c2-589d-4e5a-ac7d-e8ee06989d56" />
+
 Boom we got flag, problem solved.
 
 ## Lesson Learned
