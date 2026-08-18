@@ -159,7 +159,7 @@ So, The PNG file should now be fixed and can be opened.
 
 Challenge Completed
 
-## 5. Lesson Learned
+## Lesson Learned
 1. First step of CLI Patching, always make a backup file. Always safe the original file intact (Learned this from someone write up, since I was stuck on some parts).
 Link: https://medium.com/@sobatistacyber/picoctf-writeup-c0rrupt-cc24de6f61e9
 2. A tool that checks for the validity of png (pngchecker).
