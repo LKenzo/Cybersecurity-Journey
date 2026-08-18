@@ -3,9 +3,7 @@
 **Category:** Forensic\
 **Difficulty:** Medium\
 **File Type:** dd\
-**Tools Used:** `file`, `dd`\
-**Link:** https://learn.cylabacademy.org/library/506?page=1&category=4&difficulty=2\
-
+**Tools Used:** `file`, `dd`, `strings`\
 ## 1. Initial Reconnaisance
 The first step of reconnaisance is to check the file type, and we can do this by using _file_ command.
 <img width="1870" height="69" alt="image" src="https://github.com/user-attachments/assets/8dc386d5-ed4e-4e4e-acfb-59353c1ee0cb" />
