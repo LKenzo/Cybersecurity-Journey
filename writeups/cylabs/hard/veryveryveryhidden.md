@@ -38,7 +38,7 @@ After some search, I get to find this repo. Why this repo? because the example i
 ## 3. Reversing The Code
 Since this is an old challenge, there are many decode script out there for this already. But I was trying to create my own using python, but I do still had a hard time understanding it, so I got helped by AI to finish it up (Well I guiding me), here's the code.
 
-`
+```
 from PIL import Image
 import sys
 
@@ -59,7 +59,7 @@ def main():
     print(result.decode('ascii', errors='ignore'))
 
 main()
-`
+```
 
 Here's the output:
 
