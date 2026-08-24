@@ -1,5 +1,7 @@
 # Cybersecurity Journey
 
+NOTE: Still in the process of adding more writeups and merging from : https://app.notion.com/p/Cylab-Labs-3a5371c6604c80598039c1b9ade735b8
+
 Welcome to my personal cybersecurity knowledge base. This repository contains two main things:
 
 1. **CTF Writeups**: Detailed walkthroughs for forensic, reversing, and pwn challenges I've solved (e.g., Cylab Labs).
