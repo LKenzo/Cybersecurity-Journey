@@ -1,7 +1,7 @@
 # Transformation
 Category: Reverse Engineering
-Difficulty: Easy
-File Type: Python
+Difficulty: Medium
+File Type: ELF
 Tools Used: Terminal / Powershell to run script and any text editor (I used VSC)
 
 ## 1. Initial Reconnaissance
