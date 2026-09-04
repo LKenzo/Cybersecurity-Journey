@@ -35,7 +35,7 @@ Since we got all the important part and the logic, all we need to do is rewrite 
 ## 3. Rewriting the Code
 Using the same logic of the program, we can write it all down in C.
 
-'''
+```
 #include <stdio.h>
 
 long long hash(unsigned char *param_1) {
@@ -69,7 +69,7 @@ int main(void) {
 
     return 0;
 }
-'''
+```
 
 Running it will get us the hash.
 
